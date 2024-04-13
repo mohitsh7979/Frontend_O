@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .left {
+        width: 400px;
+        height: 100vh;
+        background-color: #f44336;
+        position: fixed;
+      }
+
+      .menu {
+        margin: 200px 50px;
+      }
+
+      .logo h1 {
+        position: relative;
+        top: 100px;
+        color: white;
+        left: 80px;
+        font-size: 50px;
+        font-weight: 100;
+      }
+
+      .menu ul li {
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        list-style: none;
+        padding: 10px 20px;
+      }
+
+      .menu ul li:hover {
+        background-color: white;
+        color: black;
+      }
+
+      /* end left side css */
+
+      .right {
+        width: 1500px;
+        position: absolute;
+        right: 0px;
+      }
+
+      .right .heading {
+        font-size: 50px;
+        margin-top: 200px;
+      }
+
+      .heading h1 {
+        font-weight: 100;
+      }
+
+      .heading h1,
+      h2,
+      hr {
+        margin: 30px 0px;
+      }
+
+      .heading h2 {
+        color: #f44336;
+      }
+
+      .heading hr {
+        width: 7%;
+        height: 10px;
+        background-color: #f44336;
+        border: none;
+        border-radius: 20px;
+      }
+
+      .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .images img {
+        width: 595px;
+        margin: 5px 0px;
+      }
+
+      .mid {
+        width: 80%;
+        margin: auto;
+      }
+
+      .packages {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+
+      }
+
+      .left-package {
+        /* border: 2px solid black; */
+        width: 49%;
+        text-align: center;
+        background-color: #f1f1f1;
+
+      }
+
+      .right-package {
+        /* border: 2px solid black; */
+        width: 49%;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+
+      .left-package ul li {
+        padding: 25px;
+        font-size: 20px;
+        border-bottom: 1px solid rgb(210, 209, 209);
+      }
+
+      .left-package ul li:nth-child(1) {
+        background-color: #616161;
+        color: white;
+        padding: 50px 0px;
+        font-size: 25px;
+      }
+
+      .btn {
+        background-color: white;
+        padding: 20px 35px;
+      }
+
+      .right-package ul li {
+        padding: 25px;
+        font-size: 20px;
+        border-bottom: 1px solid rgb(210, 209, 209);
+      }
+
+      .right-package ul li:nth-child(1) {
+        background-color: #f44336;
+        color: white;
+        padding: 50px 0px;
+        font-size: 25px;
+      }
+
+      .btn1{
+
+        background-color: #f44336;
+        color: white;
+    }
+    
+    .btn:hover{
+        
+        background-color: black;
+        color: white;
+        cursor: pointer;
+       
+      }
+
+      .btn1:hover{
+
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <h1>
+            Company <br />
+            Name
+          </h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>Home</li>
+            <li>Showcase</li>
+            <li>Services</li>
+            <li>Designers</li>
+            <li>Packages</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading mid">
+          <h1>Interior Design</h1>
+          <h2>Showcase.</h2>
+          <hr />
+        </div>
+        <div class="images mid">
+          <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="" />
+          <img src="https://www.w3schools.com/w3images/atrium.jpg" alt="" />
+          <img src="https://www.w3schools.com/w3images/livingroom.jpg" alt="" />
+          <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="" />
+          <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="" />
+          <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="" />
+        </div>
+
+        <div class="packages mid">
+          <div class="left-package">
+            <ul>
+              <li>Basic</li>
+              <li>Floorplanning</li>
+              <li>10 hours support</li>
+              <li>Photography</li>
+              <li>20% furniture discount</li>
+              <li>Good deals</li>
+              <li>$ 199 <br />per room</li>
+              <li>
+                <span class="btn">Login</span>
+              </li>
+            </ul>
+          </div>
+          <div class="right-package">
+            <ul>
+              <li>Pro</li>
+              <li>Floorplanning</li>
+              <li>10 hours support</li>
+              <li>Photography</li>
+              <li>20% furniture discount</li>
+              <li>Good deals</li>
+              <li>$ 249 <br />per room</li>
+              <li>
+               <span class="btn1 btn">Signup</span> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
